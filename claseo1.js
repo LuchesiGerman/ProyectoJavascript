@@ -1,12 +1,3 @@
-/* ejepmlo 1=
-let usuario = prompt ( "ingrese el usuario");
-let rol = prompt ("ingrese el rol");
-let mensaje = "hola " + rol + " " + usuario;
-console.log(mensaje);
-alert ( mensaje); */
-
-
-
 let usuario = prompt('Ingrese el Usuario');
 usuario = usuario.toLowerCase();
 let password = prompt('Ingrese la contraseña');
