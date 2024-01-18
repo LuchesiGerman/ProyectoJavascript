@@ -16,7 +16,7 @@ const carrito = [
 
 ];
 
-carrito.push({ nombre: 'Web Cam', categoria: 'Computación', precio: 120000})
+carrito.push({ nombre: 'Lentes wew', categoria: '6', precio: 30000})
 
 console.table( carrito )
 
