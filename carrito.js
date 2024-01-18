@@ -25,3 +25,14 @@ for( let i=0; i<carrito.length; i++ ){
     console.log('Nombre ' +  carrito[i].nombre );
     console.log('Precio ' +  carrito[i].precio );    
 }
+
+function buscarPorNombre (nombre ){
+    const product = products.find( product => product.name.toLowerCase() === nombre.toLowerCase() );
+    if (product ){
+        return 'Se encontro el producto';
+    } else {
+        return 'No existe el producto';
+    }
+}
+
+console.log( buscarPorNombre('TEcladO logitech') );
