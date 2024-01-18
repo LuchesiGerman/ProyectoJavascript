@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+  
+  
+header {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2em;
+  text-shadow: 4px 4px 0px #2a2e30;
+  margin-bottom: 20px;
+  color: #eaff6a;
+  font-weight: 900;
+}
+  
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+  
+.btn:hover {
+    background-color: #2980b9;
+}
+  
