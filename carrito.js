@@ -3,16 +3,16 @@ const transacciones = [
 ]
 
 const carrito = [ 
-    { nombre: ' Lentes Toko', categoria: '1', precio: 5000},
-    { nombre: ' Lentes Marrok', categoria: '3', precio: 7500},
-    { nombre: ' Lentes Marzul', categoria: '3', precio: 50000},
-    { nombre: ' Lentes Rosal', categoria: '2', precio: 90000},
-    { nombre: ' Lentes Gernom', categoria: '2', precio: 75000},
-    { nombre: ' Lentes Vice', categoria: '1', precio: 75000},
-    { nombre: ' Lentes San Francisco', categoria: '1', precio: 75000},
-    { nombre: ' Lentes Roma', categoria: '4', precio: 75000},
-    { nombre: ' Lentes Aruba', categoria: '3', precio: 75000},
-    { nombre: ' Lentes Los Angeles', categoria: '5', precio: 75000},
+    { nombre: ' Lentes Toko', stock: '1', precio: 5000},
+    { nombre: ' Lentes Marrok', stock: '3', precio: 7500},
+    { nombre: ' Lentes Marzul', stock: '3', precio: 50000},
+    { nombre: ' Lentes Rosal', stock: '2', precio: 90000},
+    { nombre: ' Lentes Gernom', stock: '2', precio: 75000},
+    { nombre: ' Lentes Vice', stock: '1', precio: 75000},
+    { nombre: ' Lentes San Francisco', stock: '1', precio: 75000},
+    { nombre: ' Lentes Roma', stock: '4', precio: 75000},
+    { nombre: ' Lentes Aruba', stock: '3', precio: 75000},
+    { nombre: ' Lentes Los Angeles', stock: '5', precio: 75000},
 
 ];
 
@@ -25,14 +25,3 @@ for( let i=0; i<carrito.length; i++ ){
     console.log('Nombre ' +  carrito[i].nombre );
     console.log('Precio ' +  carrito[i].precio );    
 }
-
-function buscarPorNombre (nombre ){
-    const product = products.find( product => product.name.toLowerCase() === nombre.toLowerCase() );
-    if (product ){
-        return 'Se encontro el producto';
-    } else {
-        return 'No existe el producto';
-    }
-}
-
-console.log( buscarPorNombre('TEcladO logitech') );
