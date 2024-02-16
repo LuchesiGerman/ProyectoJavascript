@@ -3,16 +3,16 @@ const transacciones = [
 ]
 
 const carrito = [ 
-    { nombre: ' Lentes Toko', stock: '1', precio: 5000},
+    { nombre: ' Lentes Toko', stock: '1', precio: 50000},
     { nombre: ' Lentes Marrok', stock: '3', precio: 7500},
     { nombre: ' Lentes Marzul', stock: '3', precio: 50000},
     { nombre: ' Lentes Rosal', stock: '2', precio: 90000},
-    { nombre: ' Lentes Gernom', stock: '2', precio: 75000},
-    { nombre: ' Lentes Vice', stock: '1', precio: 75000},
-    { nombre: ' Lentes San Francisco', stock: '1', precio: 75000},
-    { nombre: ' Lentes Roma', stock: '4', precio: 75000},
+    { nombre: ' Lentes Gernom', stock: '2', precio: 78000},
+    { nombre: ' Lentes Vice', stock: '1', precio: 75500},
+    { nombre: ' Lentes San Francisco', stock: '1', precio: 69900},
+    { nombre: ' Lentes Roma', stock: '4', precio: 79000},
     { nombre: ' Lentes Aruba', stock: '3', precio: 75000},
-    { nombre: ' Lentes Los Angeles', stock: '5', precio: 75000},
+    { nombre: ' Lentes Los Angeles', stock: '5', precio: 85000},
 
 ];
 
