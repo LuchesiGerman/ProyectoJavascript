@@ -1,3 +1,6 @@
+const saludar = function(nombre){  // function
+    alert('Hola ' + nombre + '. Soy una función');
+}
 const Products = 
 [
     {
