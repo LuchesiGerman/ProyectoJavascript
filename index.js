@@ -42,7 +42,7 @@ const Products =
         id:6,
         name: 'Lentes Vice',
         price: '75.500',
-        description: 'iphone-13-pro',
+        description: 'Lentes Vice',
         image: 'images/Lentes Vice.webp'
     }, 
     {
@@ -61,10 +61,10 @@ const Products =
     }, 
     {
         id:9,
-        name: 'Lentes Roma',
+        name: 'Lentes Aruba',
         price: '79.000',
-        description: 'Lentes Roma',
-        image: 'images/Lentes Roma.webp'
+        description: 'Lentes Aruba',
+        image: 'images/Lentes Aruba.webp'
     },
     {
         id:10,
