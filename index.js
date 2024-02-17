@@ -17,7 +17,7 @@ const Products =
     {
         id:3,
         name: 'Lentes Marzul',
-        price: '50000',
+        price: '50.000',
         description: 'Lentes Marzul',
         image: 'images/Lentes Marzul.webp'
     },
