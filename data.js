@@ -1,6 +1,4 @@
-const saludar = function(nombre){  // function
-    alert('Hola ' + nombre + '. Soy una función');
-}
+
 const Products = 
 [
     {
@@ -74,42 +72,3 @@ const Products =
         image: 'images/Lentes Los Angeles.webp'
     },  
 ]
-
-const root = document.querySelector('#root');
-const cart = []
-
-const loadEvents = () =>
-{
-    const buttons = document.querySelectorAll('.button')
-    for (const button of buttons) 
-    {
-        button.addEventListener('click', ()=> {
-            const selectedProduct = Products.find(product => product.id === Number(button.id))
-            if(selectedProduct){
-                alert(`Se agregó al carrito el producto: ${selectedProduct.name}`)
-                cart.push(selectedProduct)
-            }
-        })    
-    }
-}
-
-const createProducts = () =>
-{
-    Products.forEach(product => {
-        const card = document.createElement('div')
-        card.innerHTML = `
-            <img src='${product.image}' alt='${product.description}'>
-            <h3>$${product.price}</h3>
-            <h4>${product.description}</h4>
-            <button id='${product.id}' class='button'>Agregar al carrito</button>
-        `
-        root.appendChild(card)
-    });
-    loadEvents()
-}
-
-createProducts()
-function guardar(product){
-    localStorage.setItem(`producto`,producto);
-}
-
