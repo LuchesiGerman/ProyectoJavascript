@@ -17,7 +17,10 @@ body{
     flex-wrap: wrap;
     padding: 1em;
 }
+.imagenGrande{
+    height: 50px;
 
+}
 h1{
     width: 100%;
     text-align:center;
