@@ -109,6 +109,8 @@ const createProducts = () =>
 }
 
 createProducts()
-
+function guardar(product){
+    localStorage.setItem(`producto`,producto);
+}
 
 
