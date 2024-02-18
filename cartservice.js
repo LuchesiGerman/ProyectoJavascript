@@ -1,4 +1,4 @@
-const cuentaCarritoElement = document.getElementById("cuenta-carrito");
+
 
 /** Toma un objeto producto o un objeto con al menos un ID y lo agrega al carrito */
 function agregarAlCarrito(producto){
@@ -36,7 +36,7 @@ function agregarAlCarrito(producto){
 function restarAlCarrito(producto){
   let memoria = JSON.parse(localStorage.getItem("lentes"));
   let cantidadProductoFinal = 0;
-  const indiceProducto = memoria.findIndex(bicicleta => bicicleta.id === producto.id)
+  const indiceProducto = memoria.findIndex(lentes => lentes.id === producto.id)
   let nuevaMemoria = memoria;
   nuevaMemoria[indiceProducto].cantidad--;
   cantidadProductoFinal = nuevaMemoria[indiceProducto].cantidad;
@@ -58,17 +58,17 @@ function getNuevoProductoParaMemoria(producto){
 /** Actualiza el número del carrito del header */
 function actualizarNumeroCarrito(){
   let cuenta = 0;
-  const memoria = JSON.parse(localStorage.getItem("bicicletas"));
+  const memoria = JSON.parse(localStorage.getItem("lentes"));
   if(memoria && memoria.length > 0){
     cuenta = memoria.reduce((acum, current)=>acum+current.cantidad,0)
     return cuentaCarritoElement.innerText = cuenta;
   }
-  cuentaCarritoElement.innerText = 0;
+  
 }
 
 /** Reinicia el carrito */
 function reiniciarCarrito(){
-  localStorage.removeItem("bicicletas");
+  localStorage.removeItem("lentes");
   actualizarNumeroCarrito();
 }
 

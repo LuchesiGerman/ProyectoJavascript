@@ -1,4 +1,4 @@
-const Products = 
+/**const Products = 
 [
     {
         id:1,
@@ -70,4 +70,4 @@ const Products =
         description: 'Lentes Los Angeles',
         image: 'images/Lentes Los Angeles.webp'
     },  
-]
+]**/
