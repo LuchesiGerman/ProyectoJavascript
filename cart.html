@@ -11,11 +11,8 @@
     <link rel="stylesheet" href="styless.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="cartservice.js" defer></script>
-
 	<title>ADRENALINA - Carrito</title>
 </head>
-<body>
-  
     <header>
         <nav class="navegacion" id="top">
             <div class="logo">
@@ -47,7 +44,7 @@
                 
             </div>
         </nav>
-        <h1>Adrenalina</h1>
+      
     </header>
 	
 	<main>
@@ -62,6 +59,18 @@
   </section>
 </main>
 <body>
+    <h1>Adrenalina</h1>
+    <main>
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
+		<section id="cart-container">
+		</section>
+  <section id="totales">
+    <p>Total unidades: <span id="cantidad">0</span></p>
+    <p>Total precio: $<span id="precio">0</span></p>
+    <button disabled>Comprar</button>
+    <button id="reiniciar">Reiniciar</button>
+  </section>
+</main>
     
 </body>
 <footer>
