@@ -14,7 +14,7 @@ function agregarAlCarrito(producto){
   }
   else {
     //Si hay localstorage me fijo si el artículo ya está ahí
-    const indiceProducto = memoria.findIndex(bicicleta => bicicleta.id === producto.id)
+    const indiceProducto = memoria.findIndex(lentes => lentes.id === producto.id)
     const nuevaMemoria = memoria;
     //Si el producto no está en el carrito lo agrego
     if(indiceProducto === -1){

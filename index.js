@@ -1,6 +1,3 @@
-const saludar = function(nombre){  // function
-    alert('Hola ' + nombre + '. Soy una función');
-}
 const Products = 
 [
     {
@@ -85,10 +82,12 @@ const loadEvents = () =>
     {
         button.addEventListener('click', ()=> {
             const selectedProduct = Products.find(product => product.id === Number(button.id))
-            if(selectedProduct){
-                alert(`Se agregó al carrito el producto: ${selectedProduct.name}`)
-                cart.push(selectedProduct)
-            }
+            if(selectedProduct)
+            Swal.fire({
+                title: "Good job!",
+                text: (`Se agregó al carrito el producto:${selectedProduct.name}`),
+                icon: "success"
+              });
         })    
     }
 }
