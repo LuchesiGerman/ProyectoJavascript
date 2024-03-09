@@ -112,3 +112,8 @@ function guardar(product){
     localStorage.setItem(`producto`,producto);
 }
 
+const btns = document.querySelectorAll(button)
+const addToCart =( product )=> {
+    console.table(product)
+}
+console.log
